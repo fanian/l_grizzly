@@ -222,7 +222,6 @@ header
 .scrollMenu
   @extend header
   .header_in
-    padding-top: 20px
   position: fixed
   z-index: 999
   width: 100%
@@ -230,9 +229,9 @@ header
   left: 0
   bottom: auto
   display: none
-  height: 60px
+  height: 58px
   +box
-  background: rgba(#ffffff, 0.8)
+  background: rgba(#000000, 0.8)
   .top
     height: 0
 
@@ -331,23 +330,23 @@ header
       color: #e4cab1
       text-align: left
       line-height: 1.5em
-  .strakes
-    .strakes_in
-      +clr
-      @extend %in
-      width: 677px
-      height: 7px
-      background: rgb(156,113,73)
-      .center
-        width: 250px
-        left: 210px
-        position: relative
-        height: 7px
-        background: rgb(188,143,101)
-    position: absolute
-    bottom: -7px
-    width: 100%
+.strakes
+  .strakes_in
+    +clr
+    @extend %in
+    width: 677px
     height: 7px
+    background: rgb(156,113,73)
+    .center
+      width: 250px
+      left: 210px
+      position: relative
+      height: 7px
+      background: rgb(188,143,101)
+  position: absolute
+  bottom: -7px
+  width: 100%
+  height: 7px
 
 .coldSteel
   padding-top: 65px
@@ -564,4 +563,123 @@ header
     @extend h3
     font-size: 14px
     font-weight: normal
+    line-height: 1.4
+    margin-bottom: 30px
+  .counter_shadow
+    margin-top: -155px
 
+  .attentionForm
+    margin-top: 50px
+    .form_in
+      width: 860px !important
+    .input_back
+      background: rgba(#000000, .23)
+      input
+        background: url(../img/input_bg.png) repeat
+        color: #a3846a
+        border: 1px solid #6e5846
+        +box-shadow(inset 2px 4px 3px rgba(0,0,0,.22))
+        +placeholder
+          color: #a3846a
+
+    .button_out
+      width: 230px
+      height: 69px
+      +background-image(linear-gradient(to bottom, rgb(171,46,13) 0%, rgb(189,69,24) 100%))
+
+      .button
+        padding: 19px 27px
+        +background-image(linear-gradient(to bottom, rgb(225,57,14) 0%, rgb(232,80,25) 100%))
+        &:hover
+          +background-image(linear-gradient(to bottom, rgb(171,46,13) 0%, rgb(189,69,24) 100%))
+
+
+  .payments
+    margin-top: 45px
+    text-align: center
+.reviews
+  background: url(../img/reviews_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 998px
+  h2
+    font-size: 35px
+    font-weight: normal
+    font-family: 'exo_2black'
+    text-align: center
+    color: #ffffff
+    padding-top: 60px
+    text-transform: uppercase
+    margin-bottom: 60px
+.reviews
+  position: relative
+  border-bottom: 7px solid #4F2F13
+  .reviews_in
+    @extend %in
+    +clr
+  .reviews_item
+    width: 470px
+    display: inline-block
+    margin-right: 54px
+    margin-bottom: 55px
+    &:nth-child(2n+2)
+      margin-right: 0
+
+    +clr
+    .reviews_img
+      float: left
+      img
+        width: 122px
+        height: 122px
+        +border-radius(50%)
+
+
+
+    .reviews_text
+      width: 315px
+      float: right
+      height: 220px
+      border-bottom: 1px dashed rgba(#ffffff, .4)
+      h3
+        font-size: 22px
+        color: #ffffff
+      h4
+        font-size: 18px
+        color: #efd5b9
+        margin-bottom: 20px
+      p
+        font-size: 14px
+        color: #eeddc6
+
+.bottom
+  background: url(../img/bottom_bg.jpg) center no-repeat
+  height: 498px
+  +background-size(cover)
+  @extend header
+  +clr
+  .top
+    +clr
+    nav
+      +clr
+    .top_buy
+      font-size: 17px
+      float: left
+      margin-left: 20px
+  .header_title
+    margin-top: 90px
+    .title_logo
+      text-align: center
+      border: none
+      float: none
+      margin-bottom: 75px
+      margin-left: 22px
+      .logo_main
+      span
+        margin-left: 20px
+    p
+      font-size: 14px
+      color: #807e7d
+      text-align: center
+      margin-bottom: 10px
+      &.copyright
+        font-size: 12px
+        margin-top: 60px

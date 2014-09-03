@@ -4,15 +4,15 @@ head.ready(function() {
 	// 	$(".js-popup").hide();
 	// });
 //=================================================>scroll menu
-//    $(window).scroll(function () {
-//        if ( $(this).scrollTop() > 200 && !$('.scrollMenu').hasClass('open') ) {
-//            $('.scrollMenu').addClass('open');
-//            $('.scrollMenu').slideDown();
-//        } else if ( $(this).scrollTop() <= 200 ) {
-//            $('.scrollMenu').removeClass('open');
-//            $('.scrollMenu').slideUp();
-//        }
-//    });
+    $(window).scroll(function () {
+        if ( $(this).scrollTop() > 200 && $(this).scrollTop() < 5700 && !$('.scrollMenu').hasClass('open') ) {
+            $('.scrollMenu').addClass('open');
+            $('.scrollMenu').slideDown();
+        } else if ( $(this).scrollTop() <= 200 || $(this).scrollTop() >= 5700 ) {
+            $('.scrollMenu').removeClass('open');
+            $('.scrollMenu').slideUp();
+        }
+    });
 //===================================================>end of scroll menu
 
 
