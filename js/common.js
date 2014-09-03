@@ -3,15 +3,19 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-    $(window).scroll(function () {
-        if ( $(this).scrollTop() > 200 && !$('.scrollMenu').hasClass('open') ) {
-            $('.scrollMenu').addClass('open');
-            $('.scrollMenu').slideDown();
-        } else if ( $(this).scrollTop() <= 200 ) {
-            $('.scrollMenu').removeClass('open');
-            $('.scrollMenu').slideUp();
-        }
-    });
+//=================================================>scroll menu
+//    $(window).scroll(function () {
+//        if ( $(this).scrollTop() > 200 && !$('.scrollMenu').hasClass('open') ) {
+//            $('.scrollMenu').addClass('open');
+//            $('.scrollMenu').slideDown();
+//        } else if ( $(this).scrollTop() <= 200 ) {
+//            $('.scrollMenu').removeClass('open');
+//            $('.scrollMenu').slideUp();
+//        }
+//    });
+//===================================================>end of scroll menu
+
+
 //    jQuery(document).ready(function($) {
 //        var nav = $('.menu');
 //
