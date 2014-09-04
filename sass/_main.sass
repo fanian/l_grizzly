@@ -33,8 +33,9 @@ input, textarea
 
 .myFancyClose
   position: absolute
-  top: -17px
-  right: -18px
+  top: 14px
+  right: 14px
+  +s(fancyClose)
 
 .btn
   display: inline-block
@@ -84,9 +85,24 @@ header
         position: relative
         +arial
         float: left
-        padding: 22px 15px 19px
+        padding: 0
         color: #b8b8b8
         line-height: 1em
+        a
+          display: block
+          line-height: 58px
+          height: 55px
+          padding: 0 15px
+        &.is-active
+          background: rgba(#000, .63)
+          border-bottom: solid 3px rgb(175,137,52)
+          color: #ffffff
+          &:after
+            position: absolute
+            content: ""
+            +s(hover_bottom)
+            bottom: 0
+            left: 45%
         &:hover
           background: rgba(#000, .63)
           border-bottom: solid 3px rgb(175,137,52)
@@ -683,3 +699,33 @@ header
       &.copyright
         font-size: 12px
         margin-top: 60px
+
+
+.thanks
+  box-sizing: border-box
+  position: relative
+  text-align: center
+  width: 690px
+  height: 275px
+  background: #ffffff
+  +border-radius(5px)
+  padding-top: 55px
+  border-bottom: 7px solid rgb(79,47,19)
+  h2
+    font-size: 36px
+    color: #ab7807
+    +exob
+    text-transform: uppercase
+    border-top: solid 1px rgb(244,237,231)
+    padding-top: 55px
+    margin-bottom: 15px
+  h3
+    font-size: 19px
+    font-style: normal
+    color: #7a7066
+    font-family: 'exo_2light'
+  .strakes
+    .strakes_in
+      width: 500px
+    .center
+      left: 125px
